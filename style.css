@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #282c34;
+}
+.slide_1 {
+  display: flex;
+  border-radius: 20px;
+  padding: 25px;
+  background-color: white;
+  width: 800px;
+}
+.left {
+  width: 60%;
+  margin-top: 30px;
+}
+.left h1 {
+  font-size: 50px;
+  color: hsl(234, 29%, 20%);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.left span {
+  color: hsl(234, 29%, 20%);
+}
+.left ul {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.left li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  color: #282c34;
+}
+.left li img {
+  margin-right: 10px;
+}
+.left label {
+  display: flex;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+.email-box input {
+  width: 45vh;
+  height: 6vh;
+  border-radius: 13px;
+  border: 1px solid #000;
+  padding: 17px;
+  font-size: 15px;
+  margin: 10px 2px;
+  color: #000;
+}
+.email-box button {
+  width: 46vh;
+  height: 6vh;
+  border-radius: 13px;
+  border: none;
+  padding: 17px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e3e3e3;
+  background: hsl(235, 18%, 26%);
+}
+.left button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(251, 78, 134, 1) 0%,
+    rgba(255, 107, 92, 1) 74%,
+    rgb(248, 160, 93) 99%
+  );
+  box-shadow: none;
+  transition: 1s all;
+}
+#error_email {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+  font-weight: 800;
+  font-size: 13px;
+  margin-bottom: 5px;
+  color: hsl(4, 100%, 67%);
+}
+.right {
+  width: 40%;
+}
+.right img {
+  width: 100%;
+}
+.hide {
+  display: none;
+}
+.slide_2 {
+  background-color: #fff;
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+}
+.slide_2 h1 {
+  font-size: 40px;
+  margin: 15px;
+}
+.slide_2 p {
+  font-size: 14px;
+  margin: 15px;
+}
+.icon-card {
+  width: 50px;
+  margin: 15px;
+}
+.slide_2 button {
+  width: 100%;
+  border-radius: 13px;
+  margin: 10px 0 40px;
+  border: none;
+  padding: 17px;
+  font-size: 18px;
+  font-weight: 700;
+  color: #e3e3e3;
+  background: hsl(235, 18%, 26%);
+}
+.slide_2 button:hover {
+  background: linear-gradient(
+    90deg,
+    rgba(251, 78, 134, 1) 0%,
+    rgba(255, 107, 92, 1) 74%,
+    rgb(248, 160, 93) 99%
+  );
+  transition: 1s all;
+}
+.attribution {
+  font-size: 11px;
+}
+.attribution a {
+  color: hsl(228, 54%, 36%);
+}
+@media (max-width: 769px) {
+  .slide_1 {
+    flex-direction: column-reverse;
+    width: 95%;
+    padding: 0;
+  }
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  .slide_1 h1 {
+    font-size: 40px;
+  }
+  .left {
+    width: 100%;
+    padding: 25px;
+  }
+  .right {
+    width: 100%;
+  }
+  .right img {
+    content: url("/assets/images/illustration-sign-up-mobile.svg");
+  }
+  .email-box {
+    width: 90%;
+  }
+  .slide_2 {
+    min-height: 100vh;
+  }
+  .slide_2 h1 {
+    font-size: 40px;
+  }
+  .slide_2 p {
+    font-size: 15px;
+  }
+  .icon-card {
+    width: 50px;
+  }
+  .slide_2 button {
+    margin: 20px;
+  }
+}
