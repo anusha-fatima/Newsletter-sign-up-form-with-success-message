@@ -60,7 +60,6 @@ body {
   border: 1px solid #000;
   padding: 17px;
   font-size: 15px;
-  margin: 10px 2px;
   color: #000;
 }
 .email-box button {
@@ -68,7 +67,6 @@ body {
   height: 6vh;
   border-radius: 13px;
   border: none;
-  padding: 17px;
   font-size: 18px;
   font-weight: 700;
   color: #e3e3e3;
